@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git bash codes</title>
+</head>
+<body>
+    <section>
+        <article id="bashCodes">
+    
+          <h2>What’s the Difference Between Git and GitHub?</h2>
+          <ul>
+            <li>Git is the tool that will let you create a local repository (on your PC) and manage versions of your files
+            </li>
+            <li>GitHub is an online service that will host your Git repositories (in the cloud)</li>
+          </ul>
+    
+          <h2>How to install WSL (for windows)</h2>
+          <ol>
+            <li><strong>Download WSL2 (including Bash shell) on Windows 10/11</strong> # <a
+                href="https://learn.microsoft.com/en-us/windows/wsl/install" target="_blank">Get WSL here</a>.</li>
+            <li><strong>Run it</strong> # Open a windows command prompt and type: wsl --install</li>
+          </ol>
+    
+          <h2>How to get GIT and BASH (for windows)</h2>
+          <ol>
+            <li><strong>Download</strong> # Go here and download: <a href="https://git-scm.com/download/win"
+                target="_blank">Get Git here</a>.</li>
+            <li><strong>Now install</strong> # I just chose the defaults for now.</li>
+          </ol>
+    
+          <h2>How to get Microsoft VS Code</h2>
+          <ol>
+            <li><strong>Download</strong> # Go here and download: <a href="https://code.visualstudio.com/"
+                target="_blank">Get
+                VS Code here</a>.</li>
+            <li><strong>Now install</strong> # I just chose the defaults for now.</li>
+          </ol>
+    
+          <h2 style="text-align:left;">Three environments</h2>
+          <ol>
+            <li><strong>Working directory (files)</strong></li>
+            <li><strong>Staging (area)</strong> - is the middle ground between changes you have made to your local files and
+              what you last committed (snapshot).<br>
+              <code>git add&hellip;</code> # To add working file(s) to staging<br>
+              <code>git commit&hellip;</code> # Captures a snapshot of the project's currently staged changes. Committed
+              snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly
+              ask
+              it to.
+            </li>
+            <li><strong>Remote GitHub Repository</strong><br>
+              <code>git push&hellip</code> # To push staging repo to remote repo
+            </li>
+          </ol>
+    
+          <h2>What’s the Difference Between Fork and Clone?</h2>
+          <ul>
+            <li><strong>FORK</strong> creates a copy from another user to your REMOTE repository</li>
+            <li><strong>CLONE</strong> creates a copy from your REMOTE repository to your LOCAL repository</li>
+          </ul>
+    
+          <h2>Git Bash commands</h2>
+          <ul>
+            <li><strong>ls</strong> # List folders / files in the current directory</li>
+            <li><strong>pwd</strong> # Provides the path of current directory</li>
+            <li><strong>cd</strong> # Change directory</li>
+            <li><strong>mkdir</strong> # Make a directory (folder)</li>
+            <li><strong>touch</strong> # Make a file</li>
+            <li><strong>clear</strong> # Clear the screen</li>
+            <li><strong>status</strong> # Displays the state of the working directory and the staging area. It lets you see
+              which changes have been staged, which haven't, and which files aren't being tracked by Git.</li>
+            <li><strong>add</strong> # To add working file(s) to staging</li>
+            <li><strong>commit</strong> # Captures a snapshot of the project's currently staged changes. Committed snapshots
+              can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to.
+            </li>
+            <li><strong>push</strong> # To push staging repo UP to remote repo</li>
+            <li><strong>pull</strong> # To pull remote repo DOWN to staging repo</li>
+            <li><strong>rm -r NAME_OF_DIR</strong> # -r stands for recursive</li>
+            <li><strong>code .</strong> # Opens up VS Code in the current directory</li>
+          </ul>
+    
+          <h2>How to create a repository in GitHub.</h2>
+          <ol>
+            <li><strong>Create an account</strong> # Go to <a href="https://www.github.com/" target="_blank">GitHub</a> and
+              create an account.</li>
+            <li><strong>Create a repository</strong> # Go here to <a href="https://github.com/new" target="_blank">create a
+                repository</a></li>
+            <li><strong>Enter repository name</strong> </li>
+            <li><strong>Click to "Add a README file"</strong> </li>
+            <li><strong>You can leave .gitignore and ."Choose license" as they are.</strong> </li>
+    
+          </ol>
+    
+          <h2>Here is how you clone from GitHub and push your changes up.</h2>
+          <ol>
+            <li>git clone https://github.com/Jault1/Bio.git # in your remote repo</li>
+            <li>pwd to make sure you are in the cloned directory</li>
+            <li># Make changes in VS Code</li>
+            <li># touch test.txt # to create new files - Edit in VS Code</li>
+            <li>git status # to see changes (Red)</li>
+            <li>git add . # to add all changes to staging</li>
+            <li>git status # to see changes (Green)</li>
+            <li>git commit -m "Added second paragraph." # To add working files to staging</li>
+            <li>git push origin main # To push staging repo to remote repo</li>
+            <li>#Visit remote repo to compare.</li>
+          </ol>
+    
+          <h2>How to make your GitHub Repository viewable as a webpage/site.</h2>
+          <p>In GitHub, and inside your repository, clike the settings in the top navigation.<br>
+            On the left under "COde and automation", Select Pages.<br>
+            Under "Build and Deployment", then under "Branch" Change to "main" and "/(root)" and click save.</p>
+        </article>
+      </section>
+    
+      <footer>&copy; 2023 John Ault | All rights reserved.
+      </footer>
+</body>
+</html>
